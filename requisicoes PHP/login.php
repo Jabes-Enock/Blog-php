@@ -1,7 +1,6 @@
 <?php
 require('../conexao/conexao.php');
 
-
 if (!isset($_POST['email']) or empty($_POST['email'])) {
 	header("Location: ../login_invalido.html");
 	exit;

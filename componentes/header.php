@@ -19,16 +19,16 @@
                 </svg>
                 <h2 class="ml-3 text-white">The Blog</h2>
             </div>
-            <div class="text-white font-bold">Olá <?php echo $_SESSION['nome'] ?></div>
-            <div>
-                <a href="home.php" class="flex">
-                    <p class="pr-2 text-white hover:text-blue-700">Home</p>
 
-                </a>
+            <div class="flex items-center">
+                <div class="mr-4">
+                    <a href="home.php" class="flex px-4 ">
+                        <p class="pr-2 text-white hover:text-blue-700">Home</p>
 
-            </div>
-            <div>
-                <a href="login.html" class="flex">
+                    </a>
+
+                </div>
+                <a href="requisicoes PHP/limpar_sessao.php" class="flex">
                     <p class="pr-2 text-white">Sair</p>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="white" stroke-width="2">

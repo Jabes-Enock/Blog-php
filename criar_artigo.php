@@ -22,19 +22,20 @@ if ($_SESSION['email'] == '') {
 <body>
     <?php include('componentes/header.php'); ?>
 
-    <div class="w-screen m-auto pb-20">
+    <div class="max-w-screen m-auto pb-20">
         <div>
-            <section class="m-10">
-                <h1 class="text-6xl text-gray-600 text-center">Novo artigo</h1>
+            <section class="mt-20 mb-10">
+                <h1 class="text-2xl text-gray-600 text-center">Novo artigo</h1>
             </section>
         </div>
 
         <div class="rounded-xl w-full m-auto">
-            <section class="mb-2">
-                <h3 class="text-gray-600 text-center">Digite as informações abaixo</h3>
-            </section>
+
 
             <div class="bg-white w-full md:w-1/2 m-auto">
+                <section class="mb-2">
+                    <h3 class="ml-2 text-gray-600 font-bold">Digite as informações abaixo</h3>
+                </section>
                 <form action="requisicoes PHP/adicionar_artigo.php" method="POST" enctype="multipart/form-data">
                     <div class="py-2 px-3 ">
                         <div class="flex flex-col">

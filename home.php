@@ -30,8 +30,8 @@ if ($_SESSION['email'] == '') {
         <?php include('componentes/header.php'); ?>
 
         <section class="w-full px-4 lg:px-14 xlg:px-36 pb-10">
-
-            <div class="w-full  mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="mt-20 mb-10 text-blue-500 text-xl font-bold">Olá <?php echo $_SESSION['nome'] ?></div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
                 <?php if ($quantos_registros == 0) { ?>
                 <div class="text-center">
@@ -44,7 +44,7 @@ if ($_SESSION['email'] == '') {
 
                 <div
                     class="bg-white w-full h-full sm:w-72 md:w-full rounded-xl border py-6 px-3 text-center shadow-2xl space-y-3">
-                    <div><b><?php echo $dados['titulo']; ?></b></div>
+                    <div class="truncate"><b><?php echo $dados['titulo']; ?></b></div>
                     <div>
                         <img class="m-auto" style="height: 100px;" src="<?php echo $dados['imagem']; ?>" alt="">
                     </div>
@@ -57,7 +57,7 @@ if ($_SESSION['email'] == '') {
                     <div>
                         <a href="editar_artigo.php?id=<?php echo $dados['id'] ?>"
                             class="rounded-xl py-2 px-6 text-white bg-blue-700 hover:bg-blue-500">Editar</a>
-                        <a href="deletar_artigo.php?ref=<?php echo $dados['id'] ?>"
+                        <a href="requisicoes PHP/deletar_artigo.php?id=<?php echo $dados['id'] ?>"
                             class="rounded-xl py-2 px-6 text-white bg-red-700 hover:bg-red-500">Excluir</a>
                     </div>
                 </div>
