@@ -38,7 +38,7 @@ To organize our application, we have some folders where specific files are.</p>
 
 <h2 id="technology" style="color: blue"> Technology </h2>
 <div style="text-align:center;">
-<img style="width: 100%; max-width: 300px" alt="diagram" src="img/image.svg" />
+<img style="width: 100%; max-width: 300px" alt="diagram" src="git@github.com:Jabes-Enock/the-blog.git/img/image.svg" />
 </div><br>
 
 - **PHP:** PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites. It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
